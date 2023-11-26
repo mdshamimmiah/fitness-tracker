@@ -21,7 +21,7 @@ const Navber = () => {
             <li><NavLink to='/'>Home Page</NavLink></li>
             <li><NavLink to='/album'>Gallery page</NavLink></li>
             <li><NavLink to='/trainer'>Trainer Page</NavLink></li>
-            <li><NavLink to=''> Classes page</NavLink></li>
+            <li><NavLink to='classes'> Classes page</NavLink></li>
             <li><NavLink to=''>Dashboard</NavLink></li>
            
         

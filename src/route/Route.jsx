@@ -8,6 +8,8 @@ import Album from "../pages/galary/Album";
 import BeTrainer from "../Be Trainer/BeTrainer";
 import Trainer from "../pages/Trainer";
 import TrainerCard from "../pages/TrainerCard";
+import Classes from "../pages/Clases";
+import Slot from "../pages/Slot";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +37,10 @@ const router = createBrowserRouter([
                 element: <Album></Album>
             },
             {
+                path: '/classes',
+                element:<Classes></Classes>
+            },
+            {
                 path:'/trainer',
                 element: <Trainer></Trainer>,
                
@@ -42,11 +48,16 @@ const router = createBrowserRouter([
             {
                 path:'/Trainer/:id',
                 element: <TrainerCard></TrainerCard>,
-                loader: ({ params }) => fetch(`http://localhost:5000/trainer?/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/trainer/${params.id}`)
             },
             {
                 path:'/beTrainer',
                 element:<BeTrainer></BeTrainer>
+            },
+            {
+                path:'/trainerBookedPage/:id',
+                element:<Slot></Slot>,
+                loader: ({ params }) => fetch(`http://localhost:5000/trainer/${params.id}`)
             }
 
         ]

@@ -9,8 +9,8 @@ import Swal from "sweetalert2";
 
 
 const BeTrainer = () => {
-    const { user } = useContext(AuthContext);
-    // console.log(user,loading);
+    const { user, loading } = useContext(AuthContext);
+    console.log(user,loading);
     const axiosSecure = useAxiosSecure
 
     const handleApplied = event => {

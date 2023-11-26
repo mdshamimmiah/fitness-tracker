@@ -9,6 +9,7 @@
       "instagram": "https://www.instagram.com/alice.johnson"
     },
     "AvailableTimeSlot": "Tuesday and Thursday, 2:00 PM - 5:00 PM",
+    "slot":["1. 2pm - 3pm","2. 3pm - 4pm","3. 4pm - 5pm"],
     "KnowMore": "https://example.com/alice_johnson/about"
   },
   {
@@ -20,6 +21,7 @@
       "email": "robert.davis@example.com"
     },
     "AvailableTimeSlot": "Wednesday and Friday, 10:00 AM - 1:00 PM",
+    "slot":["1. 10am - 11am","2. 11am - 12pm","3. 12pm - 1pm"],
     "KnowMore": "https://example.com/robert_davis/about"
   },
   {
@@ -31,6 +33,7 @@
       "twitter": "https://twitter.com/emily_white"
     },
     "AvailableTimeSlot": "Monday and Thursday, 1:00 PM - 4:00 PM",
+    "slot":["1. 1pm - 2pm","2. 2pm - 3pm","3. 3pm - 4pm"],
     "KnowMore": "https://example.com/emily_white/about"
   },
   {
@@ -42,6 +45,7 @@
       "instagram": "https://www.instagram.com/david_miller"
     },
     "AvailableTimeSlot": "Tuesday and Friday, 3:00 PM - 6:00 PM",
+    "slot":["1. 3pm - 4pm","2. 4pm - 5pm","3. 5pm - 6pm"],
     "KnowMore": "https://example.com/david_miller/about"
   },
   {
@@ -53,6 +57,7 @@
       "email": "sophia.lee@example.com"
     },
     "AvailableTimeSlot": "Wednesday and Saturday, 11:00 AM - 2:00 PM",
+    "slot":["1. 11am - 12pm","2. 12pm - 1pm","3. 1pm - 2pm"],
     "KnowMore": "https://example.com/sophia_lee/about"
   },
   {
@@ -64,6 +69,7 @@
       "instagram": "https://www.instagram.com/alice.johnson"
     },
     "AvailableTimeSlot": "Tuesday and Thursday, 2:00 PM - 5:00 PM",
+    "slot":["1. 2pm - 3pm","2. 3pm - 4pm","3. 4pm - 5pm"],
     "KnowMore": "https://example.com/alice_johnson/about"
   }
 ]

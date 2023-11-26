@@ -27,7 +27,7 @@ const Trainer = () => {
                             <p className="text-5xl">{item.TrainerName}</p>
                             <p className="font-semibold">Experience of {item.YearsOfExperience} years</p>
                             <h2 className="card-title text-2xl font-extrabold mx-auto"><FaFacebookF />  <IoLogoTwitter />  <FaLinkedinIn /></h2>
-                            <p className="text-xl text-purple-800 font-bold">AvailableTimeSlot : {item.AvailableTimeSlot}</p>
+                            <p className="text-xl text-purple-800 font-bold">AvailableTimeSlot : {item.AvailableTimeSlot} if(AvailableTimeSlot)</p>
                             <Link to={`/Trainer/${item._id}`}>
                           <button className="text-lg">Know More...</button>
                           </Link>
