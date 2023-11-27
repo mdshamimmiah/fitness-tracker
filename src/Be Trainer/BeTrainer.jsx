@@ -134,6 +134,7 @@ const BeTrainer = () => {
                             " type="number" placeholder=" Your Age " name="age" required />
 
                             </div>
+                          
                         </div>
 
 

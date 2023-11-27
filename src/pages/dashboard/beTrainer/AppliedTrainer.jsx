@@ -1,15 +1,16 @@
 
 import { useEffect, useState } from "react";
-import useAxiosSecure from "../../../hooks/useAxiosSecure";
+
 import AllTrainerTable from "./AllTrainerTable";
+import useAxiosSecure from "../../../hooks/useAxiosSecure";
 
 
-const AllTrainer = () => {
+const AppliedTrainer = () => {
     const [data, setData] = useState([]);
     const axiosSecure = useAxiosSecure();
     useEffect(() => {
 
-        axiosSecure.get('/trainer')
+        axiosSecure.get('/applied')
             .then(res => setData(res.data))
     }, [])
 
@@ -47,4 +48,4 @@ const AllTrainer = () => {
     );
 };
 
-export default AllTrainer;
+export default AppliedTrainer;

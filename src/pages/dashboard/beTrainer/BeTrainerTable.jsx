@@ -1,9 +1,9 @@
 import { FaFacebookF} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const AllTrainerTable = ({item}) => {
+const BeTrainerTable = ({item}) => {
     console.log(item);
-    const { TrainerName, YearsOfExperience, ProfileImage,AvailableTimeSlot,Salary,status
+    const { name, YearsOfExperience, ProfileImage,AvailableTimeSlot,Salary,status
     } = item;
     console.log(name);
       return (
@@ -16,7 +16,7 @@ const AllTrainerTable = ({item}) => {
               </div>
             </div>
             </td>
-          <td>{TrainerName}</td>
+          <td>{name}</td>
           <td>{YearsOfExperience}</td>
            <td>{AvailableTimeSlot}</td>
            <td>{Salary}</td>
@@ -30,4 +30,4 @@ const AllTrainerTable = ({item}) => {
       );
   };
   
-  export default AllTrainerTable;
+  export default BeTrainerTable;

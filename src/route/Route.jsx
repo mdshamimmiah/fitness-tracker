@@ -12,9 +12,9 @@ import Classes from "../pages/Clases";
 import Slot from "../pages/Slot";
 import Dashboard from "../pages/dashboard/Dashboard";
 import Subscriber from "../pages/subscriber/Subscriber";
-import AppliedTrainer from "../pages/appliedTrainer/AppliedTrainer";
 import AllTrainer from "../pages/dashboard/allTrainer/AllTrainer";
 import Payment from "../pages/dashboard/allTrainer/Payment";
+import AppliedTrainer from "../pages/appliedTrainer/AppliedTrainer";
 
 const router = createBrowserRouter([
     {
