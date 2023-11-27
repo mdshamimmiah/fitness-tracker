@@ -11,7 +11,7 @@ import Swal from "sweetalert2";
 const BeTrainer = () => {
     const { user, loading } = useContext(AuthContext);
     console.log(user,loading);
-    const axiosSecure = useAxiosSecure
+    const axiosSecure = useAxiosSecure();
 
     const handleApplied = event => {
         event.preventDefault();
@@ -72,7 +72,7 @@ const BeTrainer = () => {
 
                             <div className="mb-4  w-full ">
                                 <label className="block  text-md font-semibold mb-2 " htmlFor=""> Email </label>
-                                <input className=" w-full px-4 py-2 text-white border rounded-lg bg-gray-800 focus:outline-none focus:border-blue-500 " type="text" placeholder="" readOnly  name="email" required />
+                                <input className=" w-full px-4 py-2 text-white border rounded-lg bg-gray-800 focus:outline-none focus:border-blue-500 " type="text" placeholder="" readOnly defaultValue={user.email} name="email" required />
                             </div>
                         </div>
 

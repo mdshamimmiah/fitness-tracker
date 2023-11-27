@@ -23,8 +23,7 @@ const Album = () => {
 
         setLoading(true);
 
-        axios
-            .get('http://localhost:5000/photo', {
+        axios.get('http://localhost:5000/photo', {
                 params: {
                     page: activePage,
                     size: LIMIT,

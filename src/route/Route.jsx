@@ -10,6 +10,11 @@ import Trainer from "../pages/Trainer";
 import TrainerCard from "../pages/TrainerCard";
 import Classes from "../pages/Clases";
 import Slot from "../pages/Slot";
+import Dashboard from "../pages/dashboard/Dashboard";
+import Subscriber from "../pages/subscriber/Subscriber";
+import AppliedTrainer from "../pages/appliedTrainer/AppliedTrainer";
+import AllTrainer from "../pages/dashboard/allTrainer/AllTrainer";
+import Payment from "../pages/dashboard/allTrainer/Payment";
 
 const router = createBrowserRouter([
     {
@@ -62,6 +67,29 @@ const router = createBrowserRouter([
 
         ]
     },
+    {
+        path:'dashboard',
+        element:<Dashboard></Dashboard>,
+        children:[
+                // admin route
+            {
+                path:'subscribers',
+                element:<Subscriber></Subscriber>
+            },
+            {
+                path:'appliedTrainer',
+                element:<AppliedTrainer></AppliedTrainer>
+            },
+            {
+                path:'allTrainers',
+                element:<AllTrainer></AllTrainer>
+            },
+            {
+                path:'payment',
+                element:<Payment></Payment>
+            }
+        ]
+    }
 ]);
 
 export default router;
