@@ -23,7 +23,7 @@ const BeTrainer = () => {
         const timeDay = form.timeDay.value;
         const timeWeek = form.timeWeek.value;
         const timeHour = form.timeHour.value;
-        const role = "member"
+        const status = "member"
         const skills = {
             skill1: { checked: form.skill1.checked, value: form.skill1.checked ? form.skill1.value : '' },
             skill2: { checked: form.skill2.checked, value: form.skill2.checked ? form.skill2.value : '' },
@@ -38,11 +38,11 @@ const BeTrainer = () => {
             }
         }
 
-        const trainerDoc = { email, age, timeDay, role, name, photo, timeWeek, timeHour, skills: checkedSkills }
+        const trainerDoc = { email, age, timeDay, status, name, photo, timeWeek, timeHour, skills: checkedSkills }
         console.log(trainerDoc);
 
 
-        axiosSecure.post('/addTrainer', trainerDoc)
+        axiosSecure.post('/applied', trainerDoc)
             .then(res => {
                 console.log(res.data);
                 if (res.data.insertedId) {

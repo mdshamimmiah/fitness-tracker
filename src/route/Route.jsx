@@ -14,7 +14,7 @@ import Dashboard from "../pages/dashboard/Dashboard";
 import Subscriber from "../pages/subscriber/Subscriber";
 import AllTrainer from "../pages/dashboard/allTrainer/AllTrainer";
 import Payment from "../pages/dashboard/allTrainer/Payment";
-import AppliedTrainer from "../pages/appliedTrainer/AppliedTrainer";
+import AppliedDash from "../pages/dashboard/beTrainer/AppliedDash";
 
 const router = createBrowserRouter([
     {
@@ -78,7 +78,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'appliedTrainer',
-                element:<AppliedTrainer></AppliedTrainer>
+                element:<AppliedDash></AppliedDash>
             },
             {
                 path:'allTrainers',
