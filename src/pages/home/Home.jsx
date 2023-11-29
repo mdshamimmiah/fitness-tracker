@@ -1,5 +1,6 @@
 import Footer from "../Footer";
 import AboutUs from "./AboutUs";
+import Article from "./Article";
 import Banner1 from "./Banner1";
 import FeatureSection from "./FeatureSection";
 import NewsLetter from "./NewsLetter";
@@ -14,6 +15,7 @@ const Home = () => {
             <FeatureSection></FeatureSection>
             <AboutUs></AboutUs>
             <Testimonial></Testimonial>
+            <Article></Article>
             <NewsLetter></NewsLetter>
             <TeamSection></TeamSection>
             <Footer></Footer>
