@@ -85,7 +85,7 @@ const router = createBrowserRouter([
                 element:<AllTrainer></AllTrainer>
             },
             {
-                path:'payment',
+                path:'/dashboard/payment/:_id/:salary',
                 element:<Payment></Payment>
             }
         ]

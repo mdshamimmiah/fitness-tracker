@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AllTrainerTable = ({item}) => {
     console.log(item);
-    const { TrainerName, YearsOfExperience, ProfileImage,AvailableTimeSlot,Salary,status
+    const { TrainerName, YearsOfExperience, ProfileImage,AvailableTimeSlot,Salary,status,_id
     } = item;
     console.log(name);
       return (
@@ -22,7 +22,7 @@ const AllTrainerTable = ({item}) => {
            <td>{Salary}</td>
           <td>{<FaFacebookF />  }</td>
           <td>{status}</td>
-        <td> <Link to='/dashboard/payment'><button className="bg-blue-500 w-32 rounded-md h-9">Pay</button></Link></td>
+        <td> <Link to={`/dashboard/payment/${_id}/${Salary}`}><button className="bg-blue-500 w-32 rounded-md h-9">Pay</button></Link></td>
        
         </tr>
    

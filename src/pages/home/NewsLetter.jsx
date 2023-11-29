@@ -91,7 +91,7 @@ const NewsLetter = () => {
 
             
 
-                <input type="submit" value="Subscibe Now" className="btn btn-block bg-blue-600 text-white" />
+                <input type="submit" value="Subscibe Now" className="btn btn-block bg-purple-500 text-white" />
             </form>
           
         </div>

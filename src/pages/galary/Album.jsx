@@ -64,8 +64,8 @@ const Album = () => {
             >
                 <div className="grid grid-cols-4 gap-5 mt-8">
                     {gallery.map((galleries, index) => (
-                        <div key={galleries._id || index} className="max-w-md mx-auto bg-white rounded-xl overflow-hidden shadow-md">
-                            <img className="h-64 w-96 object-cover" src={galleries.image} alt="Card" />
+                        <div key={galleries._id || index} className="max-w-md mx-auto bg-white  overflow-hidden shadow-md">
+                            <img className="h-64 w-80 object-cover" src={galleries.image} alt="Card" />
                             <div className="px-6 py-4">
                                 <div className="font-bold text-xl mb-2 text-center">{galleries.title}</div>
                             </div>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Slot = () => {
     return (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2  max-w-3xl mx-auto bg-white rounded-md overflow-hidden shadow-md my-4 p-4">
@@ -39,9 +41,9 @@ const Slot = () => {
             <li>Nutrition Counseling</li>
             <li>Exclusive Spa Access</li>
           </ul>
-          <button className="mt-24 bg-purple-500 text-white px-4 py-2 rounded-md">
+          <Link to = {`/dashboard/payment`}state={40} className="mt-24 bg-purple-500 text-white px-4 py-2 rounded-md">
             Join Now
-          </button>
+          </Link>
         </div>
       </div>
     );

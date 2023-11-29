@@ -22,12 +22,13 @@ const Testimonial = () => {
           <Swiper slidesPerView={1} ref={sliderRef}>
             <SwiperSlide>
               <SingleTestimonial
-                image="https://cdn.tailgrids.com/2.0/image/marketing/images/testimonials/testimonial-01/image-01.jpg"
+                image="https://i.ibb.co/DWQqcMZ/tes1.jpg"
                 reviewImg="https://cdn.tailgrids.com/2.0/image/marketing/images/testimonials/testimonial-01/lineicon.svg"
                 reviewAlt="lineicon"
-                details="Velit est sit voluptas eum sapiente omnis! Porro, impedit minus quam reprehenderit tempore sint quaerat id! Mollitia perspiciatis est asperiores commodi labore!"
+                details="Gerald Andres mentions how he overcame his sedentary lifestyle and slowly transitioned to being an ardent CrossFit fan with more energy. He started by losing over 20 pounds and putting on 10 pounds of muscle. 
+                Ben Sweeney went from doing stereotypical workouts to teaching spin classes, but nothing worked out. But when Cross Fit happened, he found his new favorite. Since then, he’s been in the best shape and health."
                 name="Larry Diamond"
-                position="Chief Executive Officer."
+                position="Student Id: 2457."
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -35,9 +36,10 @@ const Testimonial = () => {
                 image="https://i.ytimg.com/vi/S_a613b8zhs/hqdefault.jpg"
                 reviewImg="https://cdn.tailgrids.com/2.0/image/marketing/images/testimonials/testimonial-01/lineicon.svg"
                 reviewAlt="lineicon"
-                details="Velit est sit voluptas eum sapiente omnis! Porro, impedit minus quam reprehenderit tempore sint quaerat id! Mollitia perspiciatis est asperiores commodi labore!"
-                name="Larry Diamond"
-                position="Chief Executive Officer."
+                details="Gerald Andres mentions how he overcame his sedentary lifestyle and slowly transitioned to being an ardent CrossFit fan with more energy. He started by losing over 20 pounds and putting on 10 pounds of muscle. 
+                Ben Sweeney went from doing stereotypical workouts to teaching spin classes, but nothing worked out. But when Cross Fit happened, he found his new favorite. Since then, he’s been in the best shape and health."
+                name="Johnson david"
+                position="Student Id: 457821."
               />
             </SwiperSlide>
             <div className="absolute left-0 right-0 z-10 flex items-center justify-center gap-5 sm:bottom-0">
