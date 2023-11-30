@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import swal from 'sweetalert';
@@ -83,7 +84,7 @@ const handleGoogleSign = () =>{
             </div>
         </form>
         <p>Please go to register<Link to='/register'><button className="btn btn-link">Register</button></Link> </p>
-        <p><button onClick={handleGoogleSign} className="btn btn-ghost">Google</button></p>
+        <button onClick={handleGoogleSign} className="btn p-6 m-8"><FcGoogle ></FcGoogle> Google </button>
          </div>
         </div>
       </div>

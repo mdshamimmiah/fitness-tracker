@@ -9,12 +9,14 @@ import { GoogleAuthProvider,
 import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import auth from "./fire.init";
+import useAxiosPublic from "../hooks/useAxiosPublic";
 
 
 
 export const AuthContext = createContext(null);
 
 const googleProvider = new GoogleAuthProvider();
+const axiosPublic = useAxiosPublic();
 
 
 const AuthProvider = ({ children }) => {
@@ -56,7 +58,20 @@ const updateUserInfo =(profile) =>{
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
-            console.log('observing current user', currentUser)
+            if(currentUser){
+                // get token
+                const userInfo = {email: currentUser.email};
+                axiosPublic.post('/jwt', userInfo)
+                .then(res => {
+                    if(res.data.token) {
+                        localStorage.setItem('access-token', res.data.token)
+                    }
+                })
+            }else{
+                // to do  
+                localStorage.removeItem('access-token');
+            }
+            // console.log('observing current user', currentUser)
             setLoading(false);
         })
 

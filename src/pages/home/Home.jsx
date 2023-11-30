@@ -1,4 +1,4 @@
-import Footer from "../Footer";
+
 import AboutUs from "./AboutUs";
 import Article from "./Article";
 import Banner1 from "./Banner1";
@@ -18,7 +18,6 @@ const Home = () => {
             <Article></Article>
             <NewsLetter></NewsLetter>
             <TeamSection></TeamSection>
-            <Footer></Footer>
         </div>
     );
 };

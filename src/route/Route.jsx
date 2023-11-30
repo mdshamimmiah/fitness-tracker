@@ -15,6 +15,8 @@ import Subscriber from "../pages/subscriber/Subscriber";
 import AllTrainer from "../pages/dashboard/allTrainer/AllTrainer";
 import Payment from "../pages/dashboard/allTrainer/Payment";
 import AppliedDash from "../pages/dashboard/beTrainer/AppliedDash";
+import PrivateRoute from "../Firebase/PrivateRoute";
+import AllUsers from "../pages/dashboard/allUsers/AllUsers";
 
 const router = createBrowserRouter([
     {
@@ -69,7 +71,7 @@ const router = createBrowserRouter([
     },
     {
         path:'dashboard',
-        element:<Dashboard></Dashboard>,
+        element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         children:[
                 // admin route
             {
@@ -87,6 +89,10 @@ const router = createBrowserRouter([
             {
                 path:'/dashboard/payment/:_id/:salary',
                 element:<Payment></Payment>
+            },
+            {
+                path:'users',
+                element:<AllUsers></AllUsers>
             }
         ]
     }

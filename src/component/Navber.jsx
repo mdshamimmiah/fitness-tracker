@@ -77,7 +77,10 @@ const Navber = () => {
                           {navlinks}
                         </ul>
                     </div>
-                 <img className='w-[70px]' src={logo} alt="" />
+                <div className='flex gap-2 '>
+                <img className='w-[70px]' src={logo} alt="" />
+                <h1 className='font-semibold mt-4'>Fitness Tracker</h1>
+                </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
