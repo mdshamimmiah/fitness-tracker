@@ -15,7 +15,7 @@ const Dashboard = () => {
         <div className="flex">
             <div className="w-64 min-h-screen bg-blue-300">
                 <ul className="menu">
-
+            
                    <>
 
                             <li><NavLink to='/dashboard/adminHome'> <FaHome></FaHome> Admin Home</NavLink></li>

@@ -18,6 +18,7 @@ const TeamSection = () => {
 
     return (
         <div>
+              <h2 className="text-4xl font-bold text-center">Permanent Trainers</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-4 mb-5">
                 {

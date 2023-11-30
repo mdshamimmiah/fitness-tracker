@@ -38,6 +38,7 @@ console.log(myData);
 
   return ( 
     <div className=" mx-auto mt-9">
+    
         <div key={myData._id} className="bg-white  flex overflow-hidden shadow rounded-lg">
         <div className="flex">
         <div>

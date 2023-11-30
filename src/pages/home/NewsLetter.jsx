@@ -54,7 +54,7 @@ const NewsLetter = () => {
     return (
     <div>
 
-<div className="bg-white w-[700px] mx-auto">
+<div className="bg-gray-300 w-full mb-7 mx-auto">
             <h2 className="text-3xl font-extrabold text-center mb-10">News Letter</h2>
             <form onSubmit={handleNewsLetter}>
                 {/* first */}

@@ -8,7 +8,7 @@ const ErrorPage = () => {
         <img className='w-9/12 mx-auto' src={error} alt="" />
         </div>
       <Link to='/'>
-      <h2 className='text-3xl text-center text-purple-600 font-extrabold'>BACK TO HOME</h2>
+      <h2 className='text-5xl text-center text-purple-600 font-extrabold'>BACK TO HOME</h2>
       </Link>
     </div>
     );
