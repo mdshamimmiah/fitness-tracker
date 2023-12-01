@@ -67,7 +67,9 @@ const Register = () => {
                 axiosPublic.post('/users', userInfo)
                   .then(res => {
                     if (res.data.insertedId) {
+
                       swal("Good job!", "Thanks for register", "success")
+                      Navigate('/')
                     }
                   })
               })

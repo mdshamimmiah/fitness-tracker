@@ -16,11 +16,12 @@ import useAxiosPublic from "../hooks/useAxiosPublic";
 export const AuthContext = createContext(null);
 
 const googleProvider = new GoogleAuthProvider();
-const axiosPublic = useAxiosPublic();
+
 
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
+    const axiosPublic = useAxiosPublic();
 
 
     const [loading, setLoading] = useState(true);
@@ -65,6 +66,7 @@ const updateUserInfo =(profile) =>{
                 .then(res => {
                     if(res.data.token) {
                         localStorage.setItem('access-token', res.data.token)
+                        setLoading(false);
                     }
                 })
             }else{

@@ -17,6 +17,14 @@ import Payment from "../pages/dashboard/allTrainer/Payment";
 import AppliedDash from "../pages/dashboard/beTrainer/AppliedDash";
 import PrivateRoute from "../Firebase/PrivateRoute";
 import AllUsers from "../pages/dashboard/allUsers/AllUsers";
+import ManageSlot from "../pages/dashboard/manageSlot/ManageSlot";
+import ActivityLog from "../pages/dashboard/activityLog/ActivityLog";
+import ProfileSittings from "../pages/dashboard/profileSittings/ProfileSittings";
+import Recomanded from "../pages/dashboard/RecommandedClass/Recomanded";
+import ManageMember from "../pages/dashboard/manageMember/ManageMember";
+import AddNewForum from "../pages/dashboard/AddNewForum/AddNewForum";
+import AddNewClass from "../pages/dashboard/addNewClass/AddNewClass";
+import ForumPage from "../pages/forumPage/ForumPage";
 
 const router = createBrowserRouter([
     {
@@ -62,7 +70,11 @@ const router = createBrowserRouter([
                 element:<BeTrainer></BeTrainer>
             },
             {
-                path:'/trainerBookedPage/:id',
+                path:'/ForumsPage',
+                element:<ForumPage></ForumPage>
+            },
+            {
+                path:'/trainerBookedPage/:id/:timeslot',
                 element:<Slot></Slot>,
                 loader: ({ params }) => fetch(`http://localhost:5000/trainer/${params.id}`)
             }
@@ -93,6 +105,39 @@ const router = createBrowserRouter([
             {
                 path:'users',
                 element:<AllUsers></AllUsers>
+            },
+
+            // trainer route
+            {
+                path:'manageSlots',
+                element:<ManageSlot></ManageSlot>
+            },
+            {
+                path:'manageMember',
+                element:<ManageMember></ManageMember>
+            },
+            {
+                path:'AddNewForum',
+                element:<AddNewForum></AddNewForum>
+            },
+            {
+                path:'addNewClass',
+                element:<AddNewClass></AddNewClass>
+            },
+
+
+            // member route
+            {
+                path:'activityLog',
+                element:<ActivityLog></ActivityLog>
+            },
+            {
+                path:'ProfileSettings',
+                element:<ProfileSittings></ProfileSittings>
+            },
+            {
+                path:'RecommendedClassesPage',
+                element:<Recomanded></Recomanded>
             }
         ]
     }
