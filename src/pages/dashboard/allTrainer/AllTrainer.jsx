@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import AllTrainerTable from "./AllTrainerTable";
+import { Helmet } from "react-helmet-async";
 
 
 const AllTrainer = () => {
@@ -16,6 +17,9 @@ const AllTrainer = () => {
     console.log(data);
     return (
         <div>
+            <Helmet>
+            <title>Fitness Tracker| All Trainer</title>
+            </Helmet>
             <div className="ml-6">
                 <div className="overflow-x-auto">
                     <table className="table">

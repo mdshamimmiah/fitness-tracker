@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import AuthProvider from './Firebase/AuthProvider.jsx';
+import { HelmetProvider } from 'react-helmet-async';
+
 
 import {
   useQuery,
@@ -21,6 +23,7 @@ const queryClient = new QueryClient()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+     <HelmetProvider>
     <AuthProvider>
      <QueryClientProvider client={queryClient}>
      <div className='max-w-screen-xl mx-auto'>
@@ -28,5 +31,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </div>
      </QueryClientProvider>
     </AuthProvider>
+    </HelmetProvider>
   </React.StrictMode>,
 )

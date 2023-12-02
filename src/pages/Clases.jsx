@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Clases = () => {
   const AxiosPublic = useAxiosPublic();
@@ -16,6 +17,9 @@ const Clases = () => {
 
   return (
     <div>
+         <Helmet>
+        <title>Fitness Tracker | Classes Page</title>
+        </Helmet>
 
       <div className="overflow-x-auto bg-slate-400">
         <table className="table table-zebra">
@@ -72,6 +76,9 @@ const Clases = () => {
 
       <div>
 <h2 className="text-3xl text-center font-bold mt-9">All Classes</h2>
+<Helmet>
+<title>Fitness Tracker| Classes Page</title>
+</Helmet>
 
 <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
 <Link to="/trainer">

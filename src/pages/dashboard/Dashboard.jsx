@@ -10,6 +10,7 @@ import UseTrainer from "../../hooks/useTrainer/UseTrainer";
 import { MdHotelClass } from "react-icons/md";
 import { LuActivity } from "react-icons/lu";
 import { ImProfile } from "react-icons/im";
+import { Helmet } from "react-helmet-async";
 // import useAdmin from "./hooks/useAdmin";
 
 
@@ -22,6 +23,9 @@ const Dashboard = () => {
     
     return (
         <div className="flex">
+               <Helmet>
+        <title>Fitness Tracker |Dashboard</title>
+        </Helmet>
             <div className="w-64 min-h-screen bg-blue-300">
                 <ul className="menu">
                     {

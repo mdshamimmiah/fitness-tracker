@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 const LIMIT = 5;
@@ -49,6 +50,9 @@ const Album = () => {
 
     return (
         <div>
+               <Helmet>
+        <title>Fitness Tracker | Gallary</title>
+        </Helmet>
             <div className="relative h-screen flex items-center justify-center" style={containerStyle}>
                 <div className="absolute inset-0 bg-black opacity-25 rounded-xl"></div>
                 <div className="relative z-10 text-white text-center">

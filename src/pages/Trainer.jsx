@@ -4,6 +4,7 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import SectionTitle from "../hooks/SectionTitle";
+import { Helmet } from "react-helmet-async";
 
 
 const Trainer = () => {
@@ -21,6 +22,9 @@ const Trainer = () => {
 
         <div>
             <SectionTitle heading="Our Trainer"></SectionTitle>
+            <Helmet>
+        <title>Fitness Tracker | Trainer Page</title>
+        </Helmet>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
                 {

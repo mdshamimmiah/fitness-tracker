@@ -33,7 +33,7 @@ const handleUpdate = (event) =>{
       }).then(() => {
         // Profile updated!
         console.log(update);
-        axiosSecure.put(`/update/${user?.email}`, update)
+        axiosSecure.get(`/profile?email=${user?.email}`)
         .then(res=>{
           console.log(res.data);
           Swal.fire({
