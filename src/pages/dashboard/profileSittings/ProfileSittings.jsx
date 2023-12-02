@@ -28,28 +28,30 @@ const handleUpdate = (event) =>{
     const photo = form.photo.value;
     const update ={name, photo}
     console.log(update);
-    updateUserInfo(updateUserInfo.currentUser, {
-        displayName: "name", photoURL: "photo"
+    updateUserInfo( {
+        displayName: name, photoURL: photo
       }).then(() => {
         // Profile updated!
         console.log(update);
+        axiosSecure.put(`/update/${user?.email}`, update)
+        .then(res=>{
+          console.log(res.data);
+          Swal.fire({
+              position: "top-end",
+              icon: "success",
+              title: "update successfully",
+              showConfirmButton: false,
+              timer: 1500
+            });
+            
+        })
         // ...
       }).catch((error) => {
         // An error occurred
         console.error(error);
         // ...
       });
-      axiosSecure.put(`/update/email=${updateUserInfo?.email}`, update)
-      .then(res=>{
-        console.log(res.data);
-        Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: "update successfully",
-            showConfirmButton: false,
-            timer: 1500
-          });
-      })
+   
 
 
 }
@@ -69,7 +71,7 @@ const handleUpdate = (event) =>{
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <div className="card w-96 bg-base-100 shadow-xl">
-                            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                            <figure><img src={profile.image} alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2>user name : {profile.userName}</h2>
                                 <h2> email : {profile.email}</h2>

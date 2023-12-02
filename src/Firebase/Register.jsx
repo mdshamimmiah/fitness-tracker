@@ -61,7 +61,7 @@ const Register = () => {
               photoURL: photo
             })
               .then(() => {
-                const userInfo = { userName: name, email: email }
+                const userInfo = { userName: name, image:photo, email: email }
 
                 console.log(userInfo);
                 axiosPublic.post('/users', userInfo)
@@ -89,12 +89,12 @@ const Register = () => {
 
   }
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen "style={{ backgroundImage: 'url("https://i.ibb.co/vkcWL0g/login1.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', width: '100%' }}>
       <div className="hero-content flex-col ">
         <div className="text-center ">
-          <h1 className="text-5xl font-bold">Register now!</h1>
+          <h1 className="text-5xl font-bold text-white">Register now!</h1>
         </div>
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-purple-400">
           <div className="card-body">
 
             <form onSubmit={handleRegister}>

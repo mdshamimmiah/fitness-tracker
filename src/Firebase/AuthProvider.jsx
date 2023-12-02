@@ -33,6 +33,7 @@ const AuthProvider = ({ children }) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
 const updateUserInfo =(profile) =>{
+    console.log(profile);
     return updateProfile(auth.currentUser ,profile)
 }
 
@@ -58,6 +59,7 @@ const updateUserInfo =(profile) =>{
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
+            console.log(currentUser);
             setUser(currentUser);
             if(currentUser){
                 // get token
