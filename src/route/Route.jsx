@@ -25,6 +25,7 @@ import ManageMember from "../pages/dashboard/manageMember/ManageMember";
 import AddNewForum from "../pages/dashboard/AddNewForum/AddNewForum";
 import AddNewClass from "../pages/dashboard/addNewClass/AddNewClass";
 import ForumPage from "../pages/forumPage/ForumPage";
+import Balance from "../pages/dashboard/balance/Balance";
 
 const router = createBrowserRouter([
     {
@@ -106,6 +107,12 @@ const router = createBrowserRouter([
                 path:'users',
                 element:<AllUsers></AllUsers>
             },
+            {
+                path:'balance',
+                element:<Balance></Balance>
+
+            }
+            ,
 
             // trainer route
             {

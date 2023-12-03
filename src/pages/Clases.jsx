@@ -49,19 +49,19 @@ const Clases = () => {
                 </td>
                 <td>
                   <h1 className=" font-bold"> {item.exercise2}</h1> <br />
-                  <p className="text-xs"> {item.instructor}</p>
+                  <p className="text-xs"> {item.instructor2}</p>
                 </td>
                 <td>
-                  <h1 className=" font-bold"> {item.exercise}</h1> <br />
-                  <p className="text-xs"> {item.instructor}</p>
+                  <h1 className=" font-bold"> {item.exercise3}</h1> <br />
+                  <p className="text-xs"> {item.instructor3}</p>
                 </td>
                 <td>
-                  <h1 className=" font-bold"> {item.exercise2}</h1> <br />
-                  <p className="text-xs"> {item.instructor}</p>
+                  <h1 className=" font-bold"> {item.exercise4}</h1> <br />
+                  <p className="text-xs"> {item.instructor4}</p>
                 </td>
                 <td>
-                  <h1 className=" font-bold"> {item.exercise}</h1> <br />
-                  <p className="text-xs"> {item.instructor}</p>
+                  <h1 className=" font-bold"> {item.exercise5}</h1> <br />
+                  <p className="text-xs"> {item.instructor5}</p>
                 </td>
               </tr>)
             }
@@ -84,9 +84,11 @@ const Clases = () => {
 <Link to="/trainer">
 <div className="w-[240px] border-2 border-blue-600 rounded-none">
   <img className="h-[270px]" src="https://i.ibb.co/2F3DZBj/gm2.jpg" alt="" />
-  <h2 className="text-xl font-semibold text-center">Sopiha Devis</h2>
+ <div className="bg-yellow-300">
+ <h2 className="text-xl font-semibold text-center">Sopiha Devis</h2>
   <h1 className="text-center">Yoga Flow</h1>
   <p className="text-center">experience of 5 years</p>
+ </div>
   </div>
 </Link>
   
@@ -95,9 +97,11 @@ const Clases = () => {
 <Link to="/trainer">
 <div className="w-[240px] border-2 border-blue-600 rounded-none">
   <img className="h-[270px]" src="https://i.ibb.co/sRwWcpx/gm1.jpg" alt="" />
-  <h2 className="text-xl font-semibold text-center">Sopiha Devis</h2>
+<div className="bg-yellow-300">
+<h2 className="text-xl font-semibold text-center">Sopiha Devis</h2>
   <h1 className="text-center">Yoga Flow</h1>
   <p className="text-center">experience of 8 years</p>
+</div>
   
 
 </div>

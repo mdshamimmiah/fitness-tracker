@@ -11,10 +11,14 @@ import { MdHotelClass } from "react-icons/md";
 import { LuActivity } from "react-icons/lu";
 import { ImProfile } from "react-icons/im";
 import { Helmet } from "react-helmet-async";
+import { useContext } from "react";
+import { AuthContext } from "../../Firebase/AuthProvider";
 // import useAdmin from "./hooks/useAdmin";
 
 
 const Dashboard = () => {
+
+    const {user} = useContext(AuthContext)
 
     // TODO: get isAdmin value from the database
     const [isAdmin] = useAdmin();
@@ -29,7 +33,7 @@ const Dashboard = () => {
             <div className="w-64 min-h-screen bg-blue-300">
                 <ul className="menu">
                     {
-                        isTrainer &&
+                       user && isTrainer &&
 
 
                           
@@ -45,7 +49,7 @@ const Dashboard = () => {
                     }
             
                {
-                   isAdmin && <>
+                   user && isAdmin && <>
 
                     <li><NavLink to='/'> <FaHome></FaHome> Admin Home</NavLink></li>
                     <li><NavLink to='/dashboard/subscribers'> <FaSubscript></FaSubscript> All subscribers</NavLink></li>
