@@ -64,7 +64,7 @@ const router = createBrowserRouter([
             {
                 path:'/Trainer/:id',
                 element: <TrainerCard></TrainerCard>,
-                loader: ({ params }) => fetch(`http://localhost:5000/trainer/${params.id}`)
+                loader: ({ params }) => fetch(`https://fitness-tracker-server-green.vercel.app/trainer/${params.id}`)
             },
             {
                 path:'/beTrainer',
@@ -77,7 +77,7 @@ const router = createBrowserRouter([
             {
                 path:'/trainerBookedPage/:id/:timeslot',
                 element:<Slot></Slot>,
-                loader: ({ params }) => fetch(`http://localhost:5000/trainer/${params.id}`)
+                loader: ({ params }) => fetch(`https://fitness-tracker-server-green.vercel.app/trainer/${params.id}`)
             }
 
         ]

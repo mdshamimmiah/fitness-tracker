@@ -13,7 +13,7 @@ const BeTrainerTable = ({ item , reFetch}) => {
   console.log(name);
 
   const handleConfirmation = async() => {
-   const res = await axiosSecure.patch(`http://localhost:5000/applied/${_id}`);
+   const res = await axiosSecure.patch(`https://fitness-tracker-server-green.vercel.app/applied/${_id}`);
    console.log(res.data);
    reFetch();
    Swal.fire({

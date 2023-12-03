@@ -24,7 +24,7 @@ const Album = () => {
 
         setLoading(true);
 
-        axios.get('http://localhost:5000/photo', {
+        axios.get('https://fitness-tracker-server-green.vercel.app/photo', {
                 params: {
                     page: activePage,
                     size: LIMIT,

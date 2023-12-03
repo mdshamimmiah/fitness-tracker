@@ -6,7 +6,7 @@ import { AuthContext } from "../Firebase/AuthProvider";
 
 
 const axiosSecure = axios.create({
-   baseURL: 'http://localhost:5000' 
+   baseURL: 'https://fitness-tracker-server-green.vercel.app' 
    
 })
 

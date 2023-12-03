@@ -1,8 +1,14 @@
-# React + Vite
+my project features:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- firebase authentication 
+- protected items with login credentials 
+- This Project uses Tailwind CSS Daisyui react tabs 
+- I create data in Datase and call the data and fetch it
+- Firebase Authentication with Email and Password 
+- using a dynamic route and a meaningful 404 page
+- Firebase Authentication by Google
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live link: https://assignment12-cf109.web.app/
+
+

@@ -23,7 +23,7 @@ const CheckOut = ({ salary, trainerId }) => {
                     return;
                 }
 
-                const response = await axios.post('http://localhost:5000/create-payment-intent', {
+                const response = await axios.post('https://fitness-tracker-server-green.vercel.app/create-payment-intent', {
                     price: parsedSalary,
                     trainerId
                 });
@@ -90,7 +90,7 @@ const CheckOut = ({ salary, trainerId }) => {
             //     date: new Date(),
             //     status: paymentIntent.status
             // // }
-            // const res = axios.post('http://localhost:5000/payments', payment);
+            // const res = axios.post('https://fitness-tracker-server-green.vercel.app/payments', payment);
             // console.log(res);
         }
     };

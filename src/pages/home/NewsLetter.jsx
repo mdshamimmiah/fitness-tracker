@@ -30,7 +30,7 @@ const NewsLetter = () => {
 
         // send data to the server
 
-        fetch('http://localhost:5000/NewsLetter', {
+        fetch('https://fitness-tracker-server-green.vercel.app/NewsLetter', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
