@@ -2,7 +2,7 @@
 
 const AboutUs = () => {
     return (
-        <div>
+        <div data-aos="flip-left">
              <div>
             <h1 className="text-center text-3xl">About </h1>
             <div>

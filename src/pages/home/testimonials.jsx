@@ -18,7 +18,7 @@ const Testimonial = () => {
   return (
     <>
       <section className="pb-20 pt-20 dark:bg-dark lg:pb-[120px] lg:pt-[120px]">
-        <div className="container mx-auto">
+        <div className="container mx-auto"  data-aos="zoom-in">
           <Swiper slidesPerView={1} ref={sliderRef}>
             <SwiperSlide>
               <SingleTestimonial

@@ -9,6 +9,10 @@ import {
 import "./index.css";
 import AuthProvider from './Firebase/AuthProvider.jsx';
 import { HelmetProvider } from 'react-helmet-async';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 import {

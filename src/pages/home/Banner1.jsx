@@ -2,7 +2,7 @@
 
 const Banner1 = () => {
     return (
-        <div className='hero min-h-screen  '>
+        <div className='hero min-h-screen  '  data-aos="fade-right">
            <img className="w-full relative " src="https://i.ibb.co/TPjcVfR/b2.jpg" alt="" />
            <div className="absolute -mt-6">
            <h1 className="text-5xl text-white"> Digital body building</h1>

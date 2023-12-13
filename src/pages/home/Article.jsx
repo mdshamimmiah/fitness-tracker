@@ -16,7 +16,9 @@ const Article = () => {
     console.log(data);
 
     return (
-        <div>
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <SectionTitle heading="Article Section" subHeading="please looks our article"></SectionTitle>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             {

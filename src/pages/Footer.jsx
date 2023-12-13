@@ -2,7 +2,9 @@ import logo from '../../src/assets/icon.png'
 
 const Footer = () => {
     return (
-        <div>
+        <div  data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <footer className="footer p-10 bg-neutral text-neutral-content">
              <div>
                 <img className='w-40' src={logo} alt="" />
