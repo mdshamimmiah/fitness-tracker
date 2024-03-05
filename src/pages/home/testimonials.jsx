@@ -33,8 +33,8 @@ const Testimonial = () => {
             </SwiperSlide>
             <SwiperSlide>
               <SingleTestimonial
-                image="https://i.ytimg.com/vi/S_a613b8zhs/hqdefault.jpg"
-                reviewImg="https://cdn.tailgrids.com/2.0/image/marketing/images/testimonials/testimonial-01/lineicon.svg"
+                image=""
+                reviewImg=""
                 reviewAlt="lineicon"
                 details="Gerald Andres mentions how he overcame his sedentary lifestyle and slowly transitioned to being an ardent CrossFit fan with more energy. He started by losing over 20 pounds and putting on 10 pounds of muscle. 
                 Ben Sweeney went from doing stereotypical workouts to teaching spin classes, but nothing worked out. But when Cross Fit happened, he found his new favorite. Since then, he’s been in the best shape and health."

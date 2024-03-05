@@ -47,7 +47,7 @@ const TrainerCard = () => {
           <div>
             <div className="p-6">
               <p className="text-5xl">{myData.TrainerName}</p>
-              <p className="text-gray-600 mb-4">{myData.role}</p>
+              <p className="text-gray-500 mb-4">{myData.role}</p>
               <p className="font-semibold">Experience of {myData.YearsOfExperience} years</p>
               <div className="mb-4">
                 {/* <p className="text-gray-700">Available Time Slots:</p> */}
