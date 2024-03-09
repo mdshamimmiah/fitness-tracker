@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../Firebase/AuthProvider';
-import logo from '.././assets/icon.png'
+import logo from '.././assets/zim.jpg'
 
 const Navber = () => {
     const [theme, setTheme] = useState(

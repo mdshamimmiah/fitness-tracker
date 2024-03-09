@@ -1,4 +1,4 @@
-import logo from '../../src/assets/icon.png'
+import logo from '../../src/assets/zim.jpg'
 
 const Footer = () => {
     return (
@@ -7,7 +7,7 @@ const Footer = () => {
         data-aos-duration="1500">
             <footer className="footer p-10 bg-neutral text-neutral-content">
              <div>
-                <img className='w-40' src={logo} alt="" />
+                <img className='w-40 ' src={logo} alt="" />
                 <h2 className='text-xl text-center ml-4'>Fitness Tracker</h2>
              </div>
 
