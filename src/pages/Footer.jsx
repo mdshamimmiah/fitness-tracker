@@ -5,7 +5,7 @@ const Footer = () => {
         <div  data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500">
-            <footer className="footer p-10 bg-neutral text-neutral-content">
+            <footer className="footer p-11 bg-neutral text-neutral-content">
              <div>
                 <img className='w-40 ' src={logo} alt="" />
                 <h2 className='text-xl text-center ml-4'>Fitness Tracker</h2>
