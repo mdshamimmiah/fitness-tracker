@@ -89,12 +89,12 @@ const Register = () => {
 
   }
   return (
-    <div className="hero min-h-screen "style={{ backgroundImage: 'url("https://i.ibb.co/vkcWL0g/login1.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', width: '100%' }}>
+    <div className="hero min-h-screen bg-gray-400 w-full">
       <div className="hero-content flex-col ">
         <div className="text-center ">
           <h1 className="text-5xl font-bold text-white">Register now!</h1>
         </div>
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-purple-400">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl  bg-gray-500">
           <div className="card-body">
 
             <form onSubmit={handleRegister}>
@@ -126,10 +126,10 @@ const Register = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Register</button>
+                <button className="btn btn-primary bg-black">Register</button>
               </div>
             </form>
-            <p>Already have an account<Link to='/login'><button className="btn btn-link">Login</button></Link> </p>
+            <p>Already have an account<Link to='/login'><button className="btn btn-link font-bold">Login</button></Link> </p>
           </div>
 
           <button onClick={handleGoogleSign} className="btn p-6 m-8"><FcGoogle ></FcGoogle> Google </button>
