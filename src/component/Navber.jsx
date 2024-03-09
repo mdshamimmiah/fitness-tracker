@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../Firebase/AuthProvider';
 import logo from '.././assets/zim.jpg'
 
@@ -35,12 +35,12 @@ const Navber = () => {
     // end
     const navlinks = <>
         <div className='flex gap-2'>
-            <li><NavLink to='/'>Home Page</NavLink></li>
-            <li><NavLink to='/album'>Gallery page</NavLink></li>
-            <li><NavLink to='/trainer'>Trainer Page</NavLink></li>
-            <li><NavLink to='classes'> Classes page</NavLink></li>
-            <li><NavLink to='/ForumsPage'>Forums page</NavLink></li>
-            <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+            <li className='font-semibold'><NavLink to='/'>Home Page</NavLink></li>
+            <li className='font-semibold'><NavLink to='/album'>Gallery page</NavLink></li>
+            <li className='font-semibold'><NavLink to='/trainer'>Trainer Page</NavLink></li>
+            <li className='font-semibold'><NavLink to='classes'> Classes page</NavLink></li>
+            <li className='font-semibold'><NavLink to='/ForumsPage'>Forums page</NavLink></li>
+           
 
 
 
@@ -113,7 +113,9 @@ const Navber = () => {
                                 <div className="">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
+                                            <Link to ="/dashboard">
                                             <img src={user?.photoURL} />
+                                            </Link>
 
                                         </div>
                                     </label>

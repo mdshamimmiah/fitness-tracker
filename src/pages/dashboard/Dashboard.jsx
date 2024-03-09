@@ -30,7 +30,9 @@ const Dashboard = () => {
                <Helmet>
         <title>Fitness Tracker |Dashboard</title>
         </Helmet>
+       
             <div className="w-64 min-h-screen bg-blue-300">
+                <h1 className="text-xl ml-8">Dashboard</h1>
                 <ul className="menu">
                     {
                        user && isTrainer &&
@@ -38,6 +40,7 @@ const Dashboard = () => {
 
                           
                     <>
+                
 
                         <li><NavLink to='/'> <FaHome></FaHome> User Home</NavLink></li>
                         <li><NavLink to='/dashboard/manageSlots'> <MdOutlineManageAccounts /> Manage Slots</NavLink></li>
