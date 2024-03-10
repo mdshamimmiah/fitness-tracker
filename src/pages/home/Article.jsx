@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
-import SectionTitle from "../../hooks/SectionTitle";
+// import SectionTitle from "../../hooks/SectionTitle";
 
 
 const Article = () => {
@@ -19,7 +19,7 @@ const Article = () => {
         <div data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500">
-            <SectionTitle heading="Article Section" subHeading="please looks our article"></SectionTitle>
+           <h1 className="text-3xl font-bold text-center mb-6">Article Section</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             {
                 data?.map((item) => <div key={item._id}>

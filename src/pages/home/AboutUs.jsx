@@ -4,7 +4,7 @@ const AboutUs = () => {
     return (
         <div data-aos="flip-left">
              <div>
-            <h1 className="text-center text-3xl">About </h1>
+            <h1 className="text-center text-3xl font-bold mt-5">About </h1>
             <div>
                <p className="text-justify p-5">In today’s interconnected world, businesses have unprecedented opportunities to expand beyond their local markets. While finding a unique business idea is essential, taking that uniqueness to a global scale can yield even greater success. International expansion can help businesses tap into new consumer needs, cultural trends, and economic dynamics.
 

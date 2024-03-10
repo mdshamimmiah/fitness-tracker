@@ -55,7 +55,7 @@ const NewsLetter = () => {
     <div data-aos="fade-up"
     data-aos-duration="3000">
 
-<div className="bg-gray-300 w-full mb-7 mx-auto">
+<div className="bg-gray-300 w-1/2 p-6 pb-10 mb-7 mx-auto">
             <h2 className="text-3xl font-extrabold text-center mb-10">News Letter</h2>
             <form onSubmit={handleNewsLetter}>
                 {/* first */}

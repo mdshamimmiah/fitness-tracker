@@ -4,7 +4,7 @@ const FeatureSection = () => {
     return (
 
        <div className="mx-auto" data-aos="fade-left">
-        <h1 className="text-center text-5xl mt-6 ">Featured Section</h1>
+        <h1 className="text-center text-3xl mt-6 font-bold">Featured Section</h1>
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 mx-auto">
             <div className="card w-96  bg-white  border-2 border-blue-600 rounded-none p-2 mx-auto ">
                 <figure><img  className="mt-2" src="https://i.ibb.co/92Fq907/f3.jpg" alt="Shoes" /></figure>
